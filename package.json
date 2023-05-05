@@ -4,6 +4,9 @@
   "description": "",
   "author": "bangbang93 <bangbang93@163.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .ts packages/*/src"
+  },
   "workspaces": [
     "packages/*"
   ]
