@@ -1,0 +1,5 @@
+root: true
+extends:
+  - '@bangbang93/recommended'
+parserOptions:
+  project: ./tsconfig.json

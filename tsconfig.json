@@ -1,0 +1,11 @@
+{
+  "extends": ["@tsconfig/node18", "@tsconfig/esm"],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "incremental": true,
+  },
+  "exclude": ["node_modules", "dist"]
+}
