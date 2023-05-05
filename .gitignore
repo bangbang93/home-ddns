@@ -92,3 +92,4 @@ public/
 .vscode
 dist
 .env
+config.yml

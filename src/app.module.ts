@@ -4,6 +4,8 @@ import {Module} from '@nestjs/common'
 import {ConfigModule, ConfigService} from '@nestjs/config'
 import {BunyanLoggerModule} from 'nestjs-bunyan'
 import {fileURLToPath} from 'url'
+import {CfgModule} from './app/cfg/cfg.module.js'
+import {DdnsModule} from './app/ddns/ddns.module.js'
 
 @Module({
   imports: [
@@ -27,6 +29,9 @@ import {fileURLToPath} from 'url'
         },
       },
     }),
+
+    CfgModule,
+    DdnsModule,
   ],
   providers: [
     ClassValidationPipe,

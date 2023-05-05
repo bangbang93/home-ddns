@@ -6,6 +6,10 @@
     "experimentalDecorators": true,
     "inlineSourceMap": true,
     "incremental": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings",
+    ],
   },
   "exclude": ["node_modules", "dist"]
 }
