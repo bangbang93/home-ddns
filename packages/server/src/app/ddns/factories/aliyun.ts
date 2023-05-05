@@ -7,8 +7,8 @@ import {IsString} from 'class-validator'
 import {InjectLogger} from 'nestjs-bunyan'
 import {isIPv4} from 'net'
 import waliyun from 'waliyun'
-import type {HomeDnsConfigDdns} from '../../cfg/cfg.dto.js'
-import type {IDDnsProvider, RecordType} from '../ddns.interface.js'
+import type {HomeDnsConfigDdns} from '../../cfg/cfg.dto'
+import type {IDDnsProvider, RecordType} from '../ddns.interface'
 
 export async function aliyunDDnsFactory(config: HomeDnsConfigDdns): Promise<Constructor<IDDnsProvider>> {
   class AliyunConfig {
