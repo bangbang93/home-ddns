@@ -10,7 +10,7 @@ import waliyun from 'waliyun'
 import type {HomeDnsConfigDdns} from '../../cfg/cfg.dto.js'
 import type {IDDnsProvider, RecordType} from '../ddns.interface.js'
 
-export async function getAliyunDDnsProvider(config: HomeDnsConfigDdns): Promise<Constructor<IDDnsProvider>> {
+export async function aliyunDDnsFactory(config: HomeDnsConfigDdns): Promise<Constructor<IDDnsProvider>> {
   class AliyunConfig {
     @IsString() accessKeyId!: string
     @IsString() accessKeySecret!: string
