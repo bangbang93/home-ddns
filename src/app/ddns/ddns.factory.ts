@@ -21,16 +21,16 @@ export class DDnsFactory implements OnModuleInit {
   ) {}
 
   public async onModuleInit(): Promise<void> {
-    for (const clients of this.cfg.ddns) {
-      const factory = this.ddnsFactories.get(clients.provider)
+    for (const client of this.cfg.ddns) {
+      const factory = this.ddnsFactories.get(client.provider)
       if (!factory) {
-        throw createError.COMMON_NO_SUCH_OBJECT(`ddns供应商 ${clients.provider} 未找到`)
+        throw createError.COMMON_NO_SUCH_OBJECT(`ddns供应商 ${client.provider} 未找到`)
       }
-      if (this.ddnsClients.has(clients.name)) {
-        throw createError.COMMON_ALREADY_EXISTS(`ddns客户端 ${clients.name} 重复，请检查配置`)
+      if (this.ddnsClients.has(client.name)) {
+        throw createError.COMMON_ALREADY_EXISTS(`ddns客户端 ${client.name} 重复，请检查配置`)
       }
-      const ddns = await factory(clients)
-      this.ddnsClients.set(clients.name, await this.moduleRef.create(ddns))
+      const ddns = await factory(client)
+      this.ddnsClients.set(client.name, await this.moduleRef.create(ddns))
     }
   }
 
