@@ -27,7 +27,7 @@ export class DDnsFactory implements OnModuleInit {
         throw createError.COMMON_NO_SUCH_OBJECT(`ddns供应商 ${clients.provider} 未找到`)
       }
       if (this.ddnsClients.has(clients.name)) {
-        throw createError.COMMON_ALREADY_EXISTS(`ddns客户端 ${clients.name} 已经存在`)
+        throw createError.COMMON_ALREADY_EXISTS(`ddns客户端 ${clients.name} 重复，请检查配置`)
       }
       const ddns = await factory(clients)
       this.ddnsClients.set(clients.name, await this.moduleRef.create(ddns))
