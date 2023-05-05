@@ -9,7 +9,7 @@
     "start": "node dist/main",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && nest build",
-    "lint": "eslint --ext .ts packages/server/src/",
+    "lint": "eslint --ext .ts src",
     "dev": "nest start -w | bunyan"
   },
   "author": "bangbang93 <bangbang93@163.com>",
