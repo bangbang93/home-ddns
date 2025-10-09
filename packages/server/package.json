@@ -18,7 +18,7 @@
     "@alicloud/openapi-client": "^0.4.11",
     "@bangbang93/service-errors": "^1.1.1",
     "@bangbang93/utils": "^6.10.1",
-    "@nestjs/common": "^10.4.1",
+    "@nestjs/common": "^10.4.16",
     "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.4.1",
     "@nestjs/platform-express": "^10.4.1",
