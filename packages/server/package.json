@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@bangbang93/eslint-config-recommended": "^0.0.3",
-    "@nestjs/cli": "^10.4.5",
+    "@nestjs/cli": "^11.0.10",
     "@tsconfig/esm": "^1.0.3",
     "@tsconfig/node18": "^2.0.0",
     "@types/bluebird": "^3.5.38",
