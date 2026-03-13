@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es2023"
+        ],
+        "module": "es2022",
+        "target": "es2022",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node10",
+        "verbatimModuleSyntax": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "incremental": true,
+        "outDir": "./dist"
+    },
+    "files": [
+        "./src/index.ts"
+    ],
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "dist"
+    ]
+}
