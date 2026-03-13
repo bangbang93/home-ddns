@@ -1,10 +1,13 @@
 {
-  "extends": ["@tsconfig/node18", "@tsconfig/esm"],
+  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "inlineSourceMap": true,
-    "incremental": true
+    "incremental": true,
+    "lib": ["es2023"],
+    "module": "esnext",
+    "moduleResolution": "bundler"
   }
 }

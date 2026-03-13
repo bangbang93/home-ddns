@@ -1,5 +1,5 @@
-import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe.js'
-import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter.js'
+import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe'
+import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter'
 import {ConfigService} from '@nestjs/config'
 import {NestFactory} from '@nestjs/core'
 import {AppModule} from './app.module.js'
