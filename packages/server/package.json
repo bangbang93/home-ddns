@@ -20,7 +20,7 @@
     "@bangbang93/utils": "^6.10.1",
     "@nestjs/common": "^11.0.0",
     "@nestjs/config": "^4.0.3",
-    "@nestjs/core": "^11.0.0",
+    "@nestjs/core": "^11.1.18",
     "@nestjs/platform-express": "^11.0.0",
     "@sindresorhus/is": "^5.3.0",
     "bluebird": "^3.7.2",
