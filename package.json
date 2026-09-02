@@ -6,8 +6,5 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .ts packages/*/src"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }
