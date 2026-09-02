@@ -1,11 +1,7 @@
 packages:
   - 'packages/*'
 
-onlyBuiltDependencies:
-  - '@alicloud/openapi-core'
-  - '@nestjs/core'
-  - 'dtrace-provider'
 allowBuilds:
-  '@alicloud/openapi-core': set this to true or false
-  '@nestjs/core': set this to true or false
-  dtrace-provider: set this to true or false
+  '@alicloud/openapi-core': true
+  '@nestjs/core': true
+  dtrace-provider: true
